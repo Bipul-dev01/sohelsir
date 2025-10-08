@@ -473,6 +473,9 @@ section .title::before{
 
 /* Features Section Start  */
 
+.features-section .title::after{
+     content: "Learning Advantages";
+}
 .features-section {
   padding: 60px 20px;
   background-color: #f8f9fa;
@@ -604,21 +607,20 @@ section .title::before{
 /* **********************************************************
     Course Section Styling
 ********************************************************** */
+.courses .title::after{
+     content: "Subjects We Teach";
+}
 .courses {
   background: #f8f9fb;
   padding: 80px 20px;
   text-align: center;
 }
-.section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 10px;
-}
+
 .section-subtitle {
   color: #666;
   font-size: 1rem;
   margin-bottom: 50px;
+  margin-top: -30px;
 }
 .courses-grid {
   display: grid;
