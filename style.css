@@ -426,7 +426,7 @@ section .title::before{
 ********************************************************** */
 
 .about .title::after{
-     content: "know Your Mentor";
+     content: "Know Your Mentor";
 }
 .about .about-content .left img{
     height: 400px;
@@ -563,7 +563,7 @@ section .title::before{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "What i provide";
+    content: "Apply Early!";
 }
 .services .serve-content .card{
     width: calc(33% - 20px);
@@ -655,7 +655,7 @@ section .title::before{
     Testimonials Section Styling
 ********************************************************** */
 .teams .title::after{
-    content: "who with me";
+    content: "Parents Opinions";
 }
 .teams .carousel .card{
     background: #222;
