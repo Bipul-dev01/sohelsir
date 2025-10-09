@@ -492,6 +492,14 @@ section .title::before{
     background: #fff;
     transform: translateX(-50%);
 } 
+@media (max-width: 460px){
+  section .title::before{
+    height: 2px;
+   }
+  section .title::after{
+    font-size: 16px;
+  } 
+}
 
 /* **********************************************************
     About Section Styling
