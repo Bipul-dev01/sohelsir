@@ -1,3 +1,15 @@
+// Preloader
+
+function loaderAnimation() {
+    var loader = document.querySelector("#loading")
+    setTimeout(function () {
+        loader.style.top = "-100%"
+    }, 2200)
+}
+
+loaderAnimation()
+
+
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
