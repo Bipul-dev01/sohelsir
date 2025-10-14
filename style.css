@@ -101,7 +101,7 @@ html{
 .navbar{
     position: fixed;
     width: 100%;
-    z-index: 999; 
+    z-index: 9999; 
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
@@ -192,7 +192,7 @@ html{
 .home{
     display: flex;
     /* background: url('Images/background.png') no-repeat center; */
-    background-color: #0F172A;
+    background-color: #26065B;
     height: 80vh;
     color: #fff;
     text-align: center;
@@ -1277,7 +1277,8 @@ section .title::before{
         /* width: 60%; */
     }
     .home{
-        background: url('Images/green nature-2.jpg') no-repeat center;
+        /* background: url('Images/green nature-2.jpg') no-repeat center; */
+        background-color: #26065B;
         display: flex;
         height: 100vh;
         color: #fff;
@@ -1285,10 +1286,10 @@ section .title::before{
         font-family: 'Ubuntu', sans-serif;
         }
    .home .home-content .text-2{
-    font-size: 60px;
+    font-size: 50px;
    }
    .home .home-content .text-3{
-    font-size: 32px;
+    font-size: 25px;
    }
    .home .home-content a{
         font-size:20px ;
@@ -1300,10 +1301,18 @@ section .title::before{
 @media(max-width:500px ){
     
    .home .home-content .text-2{
-    font-size: 50px;
+    font-size: 30px;
+    line-height: 50px;
    }
    .home .home-content .text-3{
-    font-size: 27px;
+    font-size: 15px;
+   }
+   .home .home-content .text-2A{
+    font-size: 20px;
+    padding: 15px;
+   }
+   #contactUs{
+    margin-top: 40px;
    }
 }
 
