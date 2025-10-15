@@ -1270,11 +1270,13 @@ section .title::before{
 }
 @media(max-width:690px ){
     .max-width{
-        padding: 0 23px;
+        padding: 0 10px;
+    }
+    .slideshow-container {
+        max-width: 90%;
     }
     .mySlides img {
-        height: 25vh;
-        /* width: 60%; */
+        height: 26vh;
     }
     .home{
         /* background: url('Images/green nature-2.jpg') no-repeat center; */
@@ -1299,17 +1301,24 @@ section .title::before{
     }  
 }
 @media(max-width:500px ){
-    
+    .home .home-content .text-1{
+      margin-top: -20px;
+    }
    .home .home-content .text-2{
-    font-size: 30px;
+    font-size: 35px;
     line-height: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+     -webkit-text-stroke: 1px #eb4d35; 
    }
    .home .home-content .text-3{
     font-size: 15px;
+    margin-bottom: 60px;
    }
    .home .home-content .text-2A{
     font-size: 20px;
     padding: 15px;
+    margin-bottom: 25px;
    }
    #contactUs{
     margin-top: 40px;
