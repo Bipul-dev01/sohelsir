@@ -726,7 +726,7 @@ section .title::before{
     transition: all 0.3s ease;
 }
 .display img{
-    width: 80px;
+    width: 90px;
     height: auto;
 } 
 .services .serve-content .card:hover{
@@ -981,9 +981,9 @@ section .title::before{
 
 /* Footer Logo */
 .logo-img {
-  height: 150px; /* Adjust as needed */
+  height: 170px; /* Adjust as needed */
   width: auto;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 /* Footer Headings & Text */

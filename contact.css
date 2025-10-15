@@ -30,7 +30,34 @@
 .contactPage .row .map{
   /* width: 750px; */
 }
-@media (max-width:460px){
+
+@media (max-width: 768px) {
+  .contactPage .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactPage .row .image,
+  .contactPage .row .map {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contactPage .row .image img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    position: static; /* left/right ব্যবহার করো না */
+  }
+
+  .contactPage .row .map iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+/* @media (max-width:460px){
   .contactPage{
     padding: 70px 10px;
     margin-bottom: 100px;
@@ -53,4 +80,4 @@
     width: 100%; 
     height: 500px; 
   }
-}
+} */
