@@ -41,7 +41,7 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings : ["Learning-friendly", "Mock Quizzes", "Personalized Guidance", "Fun Learning", "Exam Ready"],
+        strings : ["Learning-friendly", "Mock Quizzes", "Personalized Guidance", "Learn with Joy", "Confident for Exams", "AC Classroom"],
 
         //strings: ["YouTuber","Entrepreneur", "Humanitarian", "Nature - lover", "Green activist"],
         typeSpeed: 100,
