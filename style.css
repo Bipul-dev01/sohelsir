@@ -222,7 +222,7 @@ html{
     color: transparent;
     -webkit-text-stroke: 2px #eb4d35; 
     /* -webkit-text-stroke: 2px #fff; */
-    background: url("/img/Final Back Animation.png");
+    background: url("img/Final Back Animation.png");
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 30s linear infinite;
@@ -633,7 +633,7 @@ section .title::before{
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 50px;
-  background: url("/img/flowerBackFinal.png");
+  background: url("img/flowerBackFinal.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -683,7 +683,7 @@ section .title::before{
 @media (max-width: 460px) {
   .container-objectives {
     padding: 30px;
-    background: url("/img/flowerBackFinal.png") no-repeat center center;
+    background: url("img/flowerBackFinal.png") no-repeat center center;
     background-size: cover !important; 
     min-height: 400px;
     background-attachment: fixed;
