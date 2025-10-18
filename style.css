@@ -158,7 +158,8 @@ html{
 ********************************************************** */
 .menu-btn{
     color: #fff;
-    font-size: 23px;
+    font-size: 35px;
+    padding-right: 10px;
     cursor: pointer;
     display: none;
 }
@@ -618,6 +619,7 @@ section .title::before{
 /* ********************************************************
     Vision & Objectives CSS Start
 ******************************************************** */
+
 .container-objectives {
   position: relative;
   font-family: Arial, sans-serif;
@@ -635,7 +637,7 @@ section .title::before{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: #000; /* Ensuring all text inside is black */
+  color: #000; 
 }
 
 .container-objectives::before {
@@ -652,7 +654,7 @@ section .title::before{
 
 .container-objectives h2 {
   color: #1f1f1b;
-  /* color: #000;  */
+  
   font-size: 25px;
   padding-top: 35px;
 }
@@ -661,7 +663,7 @@ section .title::before{
   font-size: 16px;
   padding-top: 10px;
   text-align: justify;
-  color: #000; /* Black color for paragraphs */
+  color: #000; 
 }
 
 .container-objectives ul {
@@ -673,22 +675,16 @@ section .title::before{
 .container-objectives li {
   margin-bottom: 18px;
   font-size: 16px;
-  color: #000; /* Black color for list items */
+  color: #000; 
   z-index: 100;
 }
-/* @media (max-width:460px){
-  .container-objectives{
-    padding: 30px;
-    background: url("/images/common/flowerBackFinal.png");
-  }
-} */
+
 
 @media (max-width: 460px) {
   .container-objectives {
     padding: 30px;
     background: url("/Images/flowerBackFinal.png") no-repeat center center;
-    background-size: cover !important; /* Forces the image to scale properly */
-    display: block !important; 
+    background-size: cover !important; 
     min-height: 400px;
     background-attachment: fixed;
   }
@@ -1266,6 +1262,7 @@ section .title::before{
     }
     .about .about-content .right{
         flex: 100%;
+        padding: 1px 8px;
     } 
     .services .serve-content .card{
         width: calc(50% - 10px);
@@ -1281,7 +1278,7 @@ section .title::before{
         padding: 0 10px;
     }
     .slideshow-container {
-        max-width: 90%;
+        max-width: 95%;
     }
     .mySlides img {
         height: 26vh;
