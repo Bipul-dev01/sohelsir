@@ -36,9 +36,6 @@
 .row .image img{
   width: 100%;
 }
-.contactPage .row .map{
-  /* width: 750px; */
-}
 
 @media (max-width: 768px) {
   .contactPage .row {
