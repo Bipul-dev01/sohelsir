@@ -868,6 +868,48 @@ section .title::before{
 .teams .carousel .card:hover img{
     border-color: #fff;
 }
+/* Font Awesome quote icon styling */
+.teams .quote-icon {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  color: #F0592A;
+  margin-bottom: 10px;
+}
+
+/* Style only testimonial paragraph */
+.teams .testimonial-text {
+  color: #ddd;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 16px;
+  margin-top: 10px;
+}
+/* 🔹 Responsive size for mobile screens */
+@media (max-width: 768px) {
+  .teams .quote-icon {
+    font-size: 28px; /* smaller for tablets & mobiles */
+    margin-bottom: 8px;
+  }
+
+  .teams .testimonial-text {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0 10px; /* add little spacing for narrow screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .teams .quote-icon {
+    font-size: 24px; /* even smaller on small phones */
+  }
+
+  .teams .testimonial-text {
+    font-size: 14px;
+  }
+}
+
 /* dots collect from CDN link */
 .owl-dots {
   display: flex !important;
