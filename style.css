@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Ubuntu:wght@400;500;700&family=Work+Sans:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -90,6 +91,7 @@ html{
 .max-width .navContainer{
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 15px;
 }
 .max-width img{
@@ -124,6 +126,7 @@ html{
     justify-content: space-between;
 }
 .navbar .logo a{
+    font-family: "Playfair Display", serif;
     color: #fff;
     font-size: 35px;
     font-weight: 600;
@@ -140,6 +143,7 @@ html{
     display: inline-block;
 }
 .navbar .menu li a{
+    font-family: 'Montserrat', sans-serif;
     display: block;
     color: #fff;
     font-size: 18px;
@@ -192,7 +196,8 @@ html{
 
 .home{
     display: flex;
-    /* background: url('Images/background.png') no-repeat center; */
+    justify-content: center;
+    align-items: center;
     background-color: #26065B;
     height: 80vh;
     color: #fff;
@@ -205,29 +210,39 @@ html{
     text-align: center;
 }
 .home .home-content .text-1{
-    font-size: 35px;
-    font-weight: 500;
-    margin-top: 55px;
-}
-.home .home-content{
-    text-align: center;
-}
-.home .home-content .text-2{
-    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
     font-weight: 600;
-}
-.home .home-content .text-2{
-    margin-top: 25px;
-    margin-bottom: 12px;
+    margin-top: 55px;
+
     color: transparent;
-    -webkit-text-stroke: 2px #eb4d35; 
-    /* -webkit-text-stroke: 2px #fff; */
+    -webkit-text-stroke: 1px #fff; 
     background: url("img/Final Back Animation.png");
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 30s linear infinite;
 }
+.home .home-content{
+    text-align: center;
+}
+.home .home-content .text-2{
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #eb4d35 ;
+}
+.home .home-content .text-2{
+    margin-top: 25px;
+    margin-bottom: 12px;
+    /* color: transparent;
+    -webkit-text-stroke: 2px #eb4d35; 
+    background: url("img/Final Back Animation.png");
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 30s linear infinite; */
+}
 .home .home-content .text-2A{
+    font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 12px;
@@ -239,7 +254,10 @@ html{
 }
 
 .home .home-content .text-3{
+    font-family: 'Montserrat', sans-serif;
     font-size: 23px;
+    font-weight: 500;
+    padding: 10px 0;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
@@ -247,11 +265,12 @@ html{
     font-weight: 500;
 }
 .home .home-content a{
+    font-family: 'Montserrat', sans-serif;
     display: inline-block;
     background: #F0592A;
     padding: 4px 16px;
     color: #fff;
-    font-size: 23px;
+    font-size: 22px;
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid #F0592A;
@@ -448,11 +467,11 @@ section{
 section .title{
     position: relative;
     text-align: center;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 42px;
+    font-weight: 400;
     margin-bottom: 60px;
     padding: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Lobster", sans-serif;
 }
 section .title::before{
     content: "";
@@ -505,30 +524,31 @@ section .title::before{
     width: 55%;
 }
 .about .about-content .right .text{
+   font-family: "Roboto", sans-serif;
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: crimson;
+    color: #F0592A;
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: crimson;
+    background: #F0592A;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
+    padding: 8px 20px;
+    margin-top: 40px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #F0592A;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: crimson;
+    color: #F0592A;
     background: none;
 }
 
@@ -561,6 +581,7 @@ section .title::before{
 }
 
 .feature-card {
+  font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   padding: 25px 20px;
   border-radius: 15px;
