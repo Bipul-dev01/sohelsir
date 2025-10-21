@@ -20,14 +20,9 @@ html{
     position: fixed;
     z-index: 99999999999999999;
     top: 0;
-  /* width: 100%;
-  height: 100vh; */
-  /* background: #011015;
-  position: relative; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 .loading-text{
   color: #fff;
@@ -36,7 +31,6 @@ html{
 .ring{
   height: 200px;
   width: 200px;
-  /* border: 4px solid #fff; */
   border: 0px solid black;
   border-radius: 50%;
   position: absolute;
@@ -82,7 +76,6 @@ html{
 }
 
 
-
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -109,16 +102,11 @@ html{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    padding: 15px 0;
+    padding: 10px 0;
     background: #F0592A;
 }
 .navbar ul .hidden{
     display: none;
-    /* font-size: 35px;
-    font-weight: 600;
-    color: green;
-    padding: 20px;
-    z-index: 999; */
 }
 .navbar .max-width{
     display: flex;
@@ -365,7 +353,7 @@ html{
 }
 .mySlides img {
     vertical-align: middle;
-    height: 90vh;
+    height: 80vh;
    
 }
 /* Slideshow container */
@@ -525,7 +513,7 @@ section .title::before{
     width: 55%;
 }
 .about .about-content .right .text{
-   font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -735,7 +723,7 @@ section .title::before{
 }
 .services .serve-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    background: #F0592A;
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
@@ -748,7 +736,7 @@ section .title::before{
     height: auto;
 } 
 .services .serve-content .card:hover{
-    background: #F0592A;
+    background: #36508a;
 }
 .services .serve-content .card .box{
     transition: all 0.3s ease;
@@ -765,9 +753,18 @@ section .title::before{
     transition: color 0.3s ease;
 }
 .services .serve-content .card .text{
+    font-family: "Roboto", sans-serif;
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    padding-top: 15px;
+}
+.services .serve-content .card .box p{
+   font-family: "Roboto", sans-serif;
+   font-size: 16px;
+   /* font-weight: 200; */
+   padding-top: 10px;
+   line-height: 25px;
 }
 /* **********************************************************
     Course Section Styling
@@ -776,6 +773,7 @@ section .title::before{
      content: "Subjects We Teach";
 }
 .courses {
+  font-family: 'Montserrat', sans-serif;
   background: #f8f9fb;
   padding: 80px 20px;
   text-align: center;
