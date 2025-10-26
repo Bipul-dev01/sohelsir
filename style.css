@@ -1493,7 +1493,11 @@ section .title::before{
     }
     .menu-btn{
         display: block;
-        z-index: 999;
+        /* z-index: 999; */
+
+        background: transparent;
+        position: relative;
+        z-index: 1000;
     }
     .menu-btn i.active:before{
         content: "\f00d";
