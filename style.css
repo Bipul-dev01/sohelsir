@@ -329,8 +329,9 @@ section .home{
   /* Home Section Moving Text */
   .moving {
     min-height: 10vh;
-    /* margin-top: -130px; */
     width: 100%;
+    display: flex;
+    align-items: center; /* centers vertically */
   }
   .moving-text {
     overflow-x: auto;
@@ -338,14 +339,18 @@ section .home{
   }
   .moving-text h1 {
     font-size: 5vw;
-    padding-top: 20px;
+    padding: 0;              
+    line-height: 1.2;        
+    vertical-align: middle;  
   }
   #gola {
     height: 15px;
     width: 15px;
     margin: 0 1vw;
+    vertical-align: middle;  
   }
 }
+
 /* Moving Text Styling End */
 
 
@@ -432,22 +437,7 @@ section .home{
     padding: 10px;
   }
 }
-/* On smaller screens, decrease text size */
-/* @media only screen and (max-width: 300px) {
-  .prev, .next {font-size: 11px}
-.dot{
- height: 10px;
-  width: 10px;
-}
 
-@media only screen and (max-width: 500px) {
-  .prev, .next {
-    font-size: 10px ;
-    padding: 1px;
-  }
-  
-} 
-}*/
 
 /* **********************************************************
     All similar content Styling code
@@ -788,6 +778,11 @@ section .title::before{
    /* font-weight: 200; */
    padding-top: 10px;
    line-height: 25px;
+}
+@media (max-width: 576px){
+  .services .serve-content .card{
+      padding: 25px 15px;
+  }
 }
 /* **********************************************************
     Course Section Styling
