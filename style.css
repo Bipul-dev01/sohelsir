@@ -441,8 +441,8 @@ html{
 /* **********************************************************
     All similar content Styling code
 ********************************************************** */
-section{
-    padding: 80px 0;
+section .max-width{
+    padding: 80px 80px;
 }
 .about, .services, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
@@ -710,6 +710,7 @@ section .title::before{
 /* **********************************************************
     Admission Section Styling
 ********************************************************** */
+
 .services, .teams{
     color: #fff;
     background: #111;
@@ -938,7 +939,11 @@ section .title::before{
     background: crimson!important;
 }
 
+
+
+
 /* Achievements & Success Stories Section */
+
 .achievements-section {
   padding: 60px 20px;
   background-color: #fff5f0;
@@ -1022,7 +1027,158 @@ section .title::before{
 /* **********************************************************
     Form Contact Us Page CSS Start
 ********************************************************** */
+/* Contact Section */
 .contact-section {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 850px;
+  background: linear-gradient(135deg, #ffffff 40%, #fff3ee);
+  padding: 60px 40px;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(240, 89, 42, 0.2);
+  margin-top: 50px;
+  margin-bottom: 90px;
+  overflow: hidden;
+  animation: floatEffect 4s ease-in-out infinite alternate;
+  transition: all 0.4s ease;
+}
+
+@keyframes floatEffect {
+  0% { transform: translate(-50%, 0px); }
+  100% { transform: translate(-50%, -8px); }
+}
+
+/* Gradient Border Glow */
+.contact-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 25px;
+  padding: 2px;
+  background: linear-gradient(135deg, #F0592A, #ff9f43, #ff6b6b);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Heading */
+.form-wrapper h2 {
+  text-align: center;
+  color: #F0592A;
+  margin-bottom: 35px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 5px rgba(240, 89, 42, 0.3);
+  position: relative;
+}
+
+.form-wrapper h2::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 4px;
+  background: linear-gradient(90deg, #F0592A, #ff7b54);
+  margin: 12px auto 0;
+  border-radius: 5px;
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px 18px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  background: #fdfdfd;
+  color: #333;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Placeholder Color */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #F0592A;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+/* Focus Effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #F0592A;
+  box-shadow: 0 0 15px rgba(240, 89, 42, 0.4);
+  background: #fff;
+  outline: none;
+}
+
+/* Textarea */
+.contact-form textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+/* Submit Button */
+.contact-form button {
+  padding: 16px;
+  background: linear-gradient(45deg, #F0592A, #ff8a65, #ff6b6b);
+  color: white;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(240, 89, 42, 0.4);
+}
+
+.contact-form button:hover {
+  transform: scale(1.07);
+  background: linear-gradient(45deg, #ff7a47, #F0592A);
+  box-shadow: 0 8px 25px rgba(240, 89, 42, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 25px;
+    margin: 30px auto;
+  }
+
+  .form-wrapper h2 {
+    font-size: 2.3rem;
+  }
+
+  .contact-form button {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 30px 20px;
+  }
+
+  .form-wrapper h2 {
+    font-size: 2rem;
+  }
+}
+
+
+/* .contact-section {
   position: relative;
   left: 50%;
   transform: translate(-50%);
@@ -1086,7 +1242,7 @@ section .title::before{
   background-color: #3867d6;
 }
 
-/* Responsive */
+
 @media (max-width: 600px) {
   .contact-section {
     padding: 30px 20px;
@@ -1095,7 +1251,7 @@ section .title::before{
   .form-wrapper h2 {
     font-size: 1.8rem;
   }
-}
+} */
 /* **********************************************************
     Form Contact Us Page CSS End
 ********************************************************** */
